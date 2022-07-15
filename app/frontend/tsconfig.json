@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "es6",                                  
+    "module": "esnext",                                
+    "esModuleInterop": true,                             
+    "declaration": true,
+    "declarationMap": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "jsx": "preserve",
+    "outDir": "build",
+    "baseUrl": "src/",
+    "rootDir": ".",
+    "lib": [
+      "ES6",
+      "DOM",
+      "ES2016",
+      "ES2017"
+    ],
+  },
+  "include": ["src/**/*.ts", "src/components/Footer.tsx", "src/index.tsx", "src/App.tsx"],
+  "exclude": ["**/*.spec.ts", "node_modules", "**/build"]
+}

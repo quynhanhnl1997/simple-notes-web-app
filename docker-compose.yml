@@ -1,0 +1,18 @@
+version: "3"
+services:
+  express:
+    restart: always
+    build: ./app/server
+    links: 
+      - mongo
+    ports:
+      - "3001:3001"
+    environment:
+      PORT: 3001
+      MONGODB_URI: mongodb://mongo:27017
+      SECRET: ASTACKOVERFLOW
+
+  mongo:
+    build: ./app/database
+    ports:
+      - "27017:27017"

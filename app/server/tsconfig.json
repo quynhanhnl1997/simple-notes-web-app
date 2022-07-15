@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "es2016",                                  
+    "module": "commonjs",                                
+    "esModuleInterop": true,                             
+    "declaration": true,
+    "declarationMap": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "incremental": true,
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "*",
+        "controllers/*",
+        "interfaces/*",
+        "models/*",
+        "utils/*"
+      ]
+    }                           
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["**/*.spec.ts", "node_modules", "**/dist"]
+}
